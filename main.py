@@ -4,12 +4,12 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-
-@app.get("/helloworld")
+#127.0.00.1:8000/
+@app.get("/")
 async def root():
     return {"message": "Hello World"}
 
-
-@app.get("/funcaoteste")
+#127.0.00.1:8000/teste1
+@app.get("/teste1")
 async def funcaoteste():
     return {"teste": True, "Número aleatório": random.randint(0, 1000)}
